@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Website</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header>
+    <h1>Settings</h1>
+  </header>
+  <nav>
+    <a href="index.html">Books</a>
+    <a href="database.html">Database</a>
+    <a href="addIncome.html">Add Income</a>
+    <a href="expenses.html">Add Expenses</a>
+    <a href="#settings">Settings</a>
+    <a href="signIn.html">Sign in</a>
+    <a href="signOut.html">Sign Out</a>
+  </nav>
+  <section id="settings">
+    <h2>Settings</h2>
+    <form>
+      <label for="incomeCategory">Income Category:</label>
+      <input type="text" id="incomeCategory" name="incomeCategory" onchange="updateCategoryOptions()"><br><br>
+      <!-- Other settings options -->
+    </form>
+  </section>
+  <footer>
+    <p>&copy; 2024 My Website</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

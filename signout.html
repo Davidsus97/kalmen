@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Out</title>
+  <link rel="stylesheet" href="signin.css">
+</head>
+<body class="hero"> 
+  <header>
+    <h1>Sign Out</h1>
+  </header> 
+  <nav>
+    <a href="index.html">Books</a>
+    <a href="database.html">Database</a>
+    <a href="addIncome.html">Add Income</a>
+    <a href="expenses.html">Add Expenses</a>
+    <a href="settings.html">Settings</a>
+    <a href="signIn.html">Sign in</a>
+    <a href="#signOut">Sign Out</a>
+  </nav> 
+
+      <div class="form-box">
+
+        <div class="button-box">
+         <div class="btn"></div>
+          <button type="button" class="toggle-btn" onclick="login()">Log in</button>
+          <button type="button" class="toggle-btn" onclick="register()">Register</button>
+        </div>
+
+            <div class="social-icons">
+              <img src="fb.png" alt="Facebook logo">
+              <img src="tw.png" alt="Twitter logo">
+              <img src="gp.png" alt="Google+ logo">
+            </div>
+
+            <form id="login" class="input-group">
+              <input type="text" class="input-field" placeholder="Username" required>
+              <input type="text" class="input-field" placeholder="Password" required> 
+              <input type="checkbox" class="check-box"><span>Remember password</span>   
+              <button type="submit" class="submit-btn">Log in</button>           
+            </form>
+
+            <form id="register" class="input-group">
+              <input type="text" class="input-field" placeholder="Username" required>
+              <input type="email" class="input-field" placeholder="Email" required>              
+              <input type="text" class="input-field" placeholder="Password" required> 
+              <input type="checkbox" class="check-box"><span>i agree to the terms & conditions</span>   
+              <button type="submit" class="submit-btn">Register</button>           
+            </form>
+             
+            <!--
+            <div>
+              <input type="submit" class="submit-logout" id="logout" name="logout" value="Logout">
+            </div>
+          -->
+
+         </div>
+    
+
+
+  <script>
+    var loginButton = document.querySelector(".button-box .toggle-btn:nth-child(2)");
+    var registerButton = document.querySelector(".button-box .toggle-btn:nth-child(3)");
+    var x = document.getElementById("login");
+    var y = document.getElementById("register");
+
+    function register() {
+      document.querySelector(".button-box .btn").style.left = "110px"; 
+      x.style.left = "-400px";
+      y.style.left ="50px";
+    }
+
+    function login() {
+      document.querySelector(".button-box .btn").style.left = "0px";
+      x.style.left = "50px";
+      y.style.left ="450px";      
+    }
+  </script>
+
+
+
+   <footer>
+    <p>&copy; 2024 My Website</p>
+  </footer> 
+  <script src="script.js"></script>
+</body>
+</html>
